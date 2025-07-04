@@ -15,4 +15,4 @@ jobs:
           who-to-greet: '@wulfland'
 
       - name: Output the ans
-        run: echo "The answer is ${{ steps..my-action.outputs.answer }}"
+        run: echo "The answer is ${{ steps.my-action.outputs.answer }}"
