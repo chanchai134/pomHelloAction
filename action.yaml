@@ -1,0 +1,16 @@
+name: Pom Hello Action
+description: greets someone and returns always 88
+inputs:
+  who-to-greet:
+    description: Who to greet
+    required: true
+    default: World
+outputs:
+  answer:
+    description: the answer always 88
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.who-to-greet }}
+    
